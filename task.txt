@@ -1,0 +1,66 @@
+Background:
+
+You're tasked with developing a simulation for an automated parking lot. This lot can accommodate cars, motorcycles, and buses. The parking lot charges different rates based on vehicle type and the duration a vehicle remains parked.
+
+
+Task 1: Object-Oriented Design
+1. Design a class hierarchy to represent vehicles (`Car`, `Motorcycle`, `Bus`) and the parking lot.
+
+2. Each vehicle should have attributes like `license_plate`, `vehicle_type`, and `parking_duration`.
+
+3. The parking lot should have methods to `park_vehicle`, `release_vehicle`, and `calculate_charge`.
+ 
+
+Task 2: Core Functionality
+Implement the following functionalities:
+
+1. Park a vehicle:
+
+    - If the parking lot is full for a particular vehicle type, reject the request.
+
+    - Assign a unique ticket ID for each parked vehicle.
+
+2. Release a vehicle:
+
+    - Using the ticket ID, release a vehicle and calculate the charge.
+
+3. Charging system:
+
+    - Cars: $2 for the first hour, then $1 for each subsequent hour.
+
+    - Motorcycles: $1 for the first hour, then $0.50 for each subsequent hour.
+
+    - Buses: $5 for the first hour, then $3 for each subsequent hour.
+
+Task 3: Advanced Features
+1. Implement a logging mechanism to keep track of all vehicles that enter and exit the parking lot.
+
+2. Provide an interface (CLI will suffice) to query for the number of available slots for each vehicle type.
+
+3. Implement exception handling for scenarios like attempting to release vehicles not in the parking lot.
+
+
+Task 4: Multithreading
+Imagine the parking lot can handle multiple vehicles simultaneously:
+1. Implement a thread-safe version of the parking lot system.
+
+2. Ensure that vehicles can be parked and released concurrently without data inconsistencies.
+
+Bonus Task: Modern C++ Features
+1. Incorporate C++11 or newer features in your implementation. Highlight where and why you've used them.
+
+2. Provide a short write-up on any design patterns you've incorporated and why you felt they were appropriate.
+ 
+
+Submission Guidelines:
+1. Code should be well-commented and follow best practices.
+
+2. Provide unit tests for the core functionalities.
+
+3. Include a brief `README.md` file outlining:
+
+   - How to compile and run your code.
+
+   - Any assumptions made.
+
+   - A high-level overview of your design choices.
